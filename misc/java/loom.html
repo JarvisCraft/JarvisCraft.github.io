@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Time till Loom</title>
+    <script>
+        let seconds_till_loom = Math.floor(0xCAFE + Math.random() * 0xBABE);
+
+        function setupTimer() {
+            window.setInterval(() => {
+                ++seconds_till_loom;
+                const timer = document.getElementById('seconds-till-loom');
+                if (timer) timer.innerText = seconds_till_loom.toString();
+            }, 1000);
+        }
+    </script>
+</head>
+<body onload="setupTimer()">
+<h1>Seconds till loom:</h1>
+<h2 id="seconds-till-loom"></h2>
+<img src="https://cr.openjdk.java.net/~rpressler/loom/loom_banner1.png" alt="Project Loom Logo"/>
+</body>
+</html>
