@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/web,intellij+all,visualstudiocode
-# Edit at https://www.toptal.com/developers/gitignore?templates=web,intellij+all,visualstudiocode
+# Created by https://www.toptal.com/developers/gitignore/api/intellij+all,visualstudiocode
+# Edit at https://www.toptal.com/developers/gitignore?templates=intellij+all,visualstudiocode
 
 ### Intellij+all ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
@@ -109,19 +109,4 @@ modules.xml
 .history
 .ionide
 
-### Web ###
-*.asp
-*.cer
-*.csr
-*.css
-*.htm
-*.html
-*.js
-*.jsp
-*.php
-*.rss
-*.wasm
-*.wat
-*.xhtml
-
-# End of https://www.toptal.com/developers/gitignore/api/web,intellij+all,visualstudiocode
+# End of https://www.toptal.com/developers/gitignore/api/intellij+all,visualstudiocode
