@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ozon Product URL Shortener</title>
+</head>
+<body>
+<h1>Ozon Product URL converter 3000</h1>
+
+<form id="original-url-form">
+    <label for="original-url">Original URL</label>
+    <input id="original-url"/>
+
+    <button type="submit">Convert</button>
+</form>
+<p id="resulting-url"></p>
+<script>
+    const regex = /^https:\/\/www\.ozon\.ru\/product\/(?:.*-)?(\d+)(?:[\w\W+]*)?$/;
+    const input = document.getElementById('original-url');
+    const output = document.getElementById('resulting-url');
+
+    document.getElementById('original-url-form').addEventListener('submit', event => {
+        event.preventDefault();
+        const result = regex.exec(input.value);
+        output.textContent = result ? `https://www.ozon.ru/product/${result[1]}` : '[ERROR]';
+    });
+</script>
+</body>
+</html>
